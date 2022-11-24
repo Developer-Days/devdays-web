@@ -31,6 +31,7 @@ module.exports = {
     fontFamily: {
       "League-Spartan": ["var(--font-spartan)"],
       almarai: ["var(--font-almarai)"],
+      inter: ["var(--font-inter)"],
     },
   },
   // plugins: [require("@tailwindcss/line-clamp")],

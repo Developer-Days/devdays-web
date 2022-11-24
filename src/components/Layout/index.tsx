@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react"
 import { useRouter } from "next/router"
-import { Almarai, League_Spartan } from "@next/font/google"
+import { Almarai, Inter, League_Spartan } from "@next/font/google"
 import Header from "./Header"
 import Footer from "./Footer"
 
@@ -18,15 +18,21 @@ const spartan = League_Spartan({
   subsets: ["latin"],
 })
 
+const inter = Inter({
+  subsets: ["latin"],
+  style: "normal",
+  variable: "--font-inter",
+})
+
 const Layout = ({ children }: { children: ReactNode }) => {
   const router = useRouter()
   return (
     <div
-      className={`${almarai.variable} ${spartan.variable} w-screen h-screen overflow-hidden`}
+      className={`${almarai.variable} ${inter.variable} ${spartan.variable} w-screen h-screen overflow-hidden`}
     >
       <Header />
       <div className="flex overflow-auto h-[100%] w-full">
-        <main className="h-full w-full flex pt-32 flex-col overflow-y-auto overflow-x-hidden items-center">
+        <main className="h-full w-full flex flex-col overflow-y-auto overflow-x-hidden items-center">
           {children}
         </main>
       </div>
