@@ -1,6 +1,5 @@
 import Head from "next/head"
 import Image from "next/image"
-import styles from "../styles/Home.module.css"
 import art from "../public/assets/art.png"
 
 export default function Home() {
@@ -32,7 +31,7 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className="flex w-full items-center ml-6 mb-6 justify-end">
+          <div className="flex w-full items-center justify-end">
             <div className="flex max-h-[531px]">
               <Image src={art} alt="" />
             </div>
