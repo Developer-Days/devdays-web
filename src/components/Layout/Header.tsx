@@ -1,3 +1,4 @@
+import Image from "next/image"
 import React from "react"
 import {
   TbBrandDiscord,
@@ -6,12 +7,17 @@ import {
   TbBrandLinkedin,
   TbBrandYoutube,
 } from "react-icons/tb"
+import logo from "../../../public/assets/logo.png"
 
 const Header = () => {
   return (
     <div className="top-0 w-screen px-4 py-7 justify-center bg-[#f5f5f5] flex">
       <div className="w-full flex container justify-between">
-        <div className=""></div>
+        <div className="">
+          <div className="flex">
+            <Image src={logo} alt={"developer days 2.0"} />
+          </div>
+        </div>
         <div className="flex items-center flex-col gap-2">
           <div className="text-lg font-semibold text-gray-800 font-inter italic">
             keep yourself updated
