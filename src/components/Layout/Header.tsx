@@ -15,7 +15,7 @@ const Header = () => {
       <div className="w-full flex container justify-between">
         <div className="">
           <div className="flex">
-            <Image src={logo} alt={"developer days 2.0"} style={{'height':'100px', 'width':'auto'}}/>
+            <Image src={logo} alt={"developer days 2.0"} style={{'height':'70px', 'width':'auto'}}/>
           </div>
         </div>
         <div className="flex items-center flex-col gap-2">
