@@ -1,6 +1,6 @@
 import Head from "next/head"
 import Image from "next/image"
-import art from "../public/assets/art.png"
+import art from "../public/assets/art.svg"
 
 export default function Home() {
   return (
@@ -19,13 +19,11 @@ export default function Home() {
         <div className="flex lg:grid h-full flex-col w-full grid-cols-2">
           <div className="flex gap-4 justify-center flex-col">
             <h1 className=" font-League-Spartan leading-[73.6px]">
-              We are coming back!
+              We are back!
             </h1>
             <h5 className="text-gray-700 font-almarai">
-              Stay tuned for New Tracks and Challenges, with a pinch of surprise
-              for the whole developer community Stay tuned for New Tracks and
-              Challenges, with a pinch of surprise for the whole developer
-              community Stay tuned for New Tracks and Challenges
+            The overpowering series of Developer Days is coming back soon!
+New Tracks and New Challenges, along with a pinch of surprise for the whole developer community, so experts and newbies stay tuned.................
             </h5>
             <div className="mt-10 items-center flex gap-5">
               <h5 className="font-League-Spartan">
