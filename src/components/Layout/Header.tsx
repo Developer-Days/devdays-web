@@ -18,7 +18,7 @@ const Header = () => {
             <Image src={logo} alt={"developer days 2.0"} style={{'height':'70px', 'width':'auto'}}/>
           </div>
         </div>
-        <div className="flex items-center flex-col gap-2">
+        <div className="sm:flex md:flex hidden  items-center flex-col gap-2">
           <div className="text-lg font-semibold text-gray-800 font-inter italic">
             keep yourself updated
           </div>
