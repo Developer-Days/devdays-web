@@ -2,8 +2,8 @@ import React from "react";
 
 const Main = () => {
   return (
-    <div className="relative lg:w-5/12 text-center max-w-lg mx-auto lg:max-w-none lg:text-left">
-      <h1 className=" font-League-Spartan text-gray-800 ">We are back!</h1>
+    <div className="relative text-center max-w-lg mx-auto lg:max-w-none lg:text-left">
+      <h1 className=" font-League-Spartan text-gray-800 text-6xl sm:text-[80px]">We are back!</h1>
       <h5 className="text-gray-700 font-almarai text-xl">
         The overpowering series of Developer Days is coming back soon! New
         Tracks and New Challenges, along with a pinch of surprise for the whole

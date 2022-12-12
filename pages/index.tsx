@@ -18,8 +18,8 @@ export default function Home() {
         <meta name="description" content="Developer days is coming back!" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="w-full h-full container p-5  relative">
-        <div className="flex flex-col lg:flex-row lg:items-center max-w-screen-3xl mx-auto py-16 md:py-20 ">
+      <div className="w-full h-full container p-5 sm:p-0 relative">
+        <div className="flex flex-col lg:flex-row lg:items-center max-w-screen-3xl mx-auto  mb-6">
           <Main />
           <div className="max-w-lg">
             <Image className="" src={art} alt="" />

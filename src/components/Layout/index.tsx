@@ -28,15 +28,18 @@ const Layout = ({ children }: { children: ReactNode }) => {
   const router = useRouter()
   return (
     <div
-      className={`${almarai.variable} ${inter.variable} ${spartan.variable} w-screen h-screen overflow-hidden`}
+      className={`${almarai.variable} ${inter.variable} ${spartan.variable} w-screen h-screen sm:overflow-hidden overflow-auto`}
     >
       <Header />
-      <div className="flex overflow-auto h-[100%] w-full">
+      <div className="flex overflow-auto w-full">
         <main className="h-full w-full flex flex-col overflow-y-auto overflow-x-hidden items-center">
           {children}
         </main>
       </div>
+      <div className="visible sm:invisible">
       <Footer />
+      </div>
+     
     </div>
   )
 }
