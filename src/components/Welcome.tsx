@@ -5,6 +5,7 @@ import React, {
     useRef,
     useState,
 } from "react"
+import Loader from "./Loader"
 
 const useIsomorphicLayoutEffect =
     typeof window !== "undefined" ? useLayoutEffect : useEffect
@@ -54,10 +55,15 @@ const Welcome = () => {
         <div
             className={`fixed ${
                 visible ? "opacity-100" : "opacity-0 pointer-events-none"
-            } bg-red-500 top-0 left-0 w-screen flex transition-all flex-col justify-center items-center h-screen z-[1000]`}
+            } bg-teal-100 top-0 left-0 w-screen flex transition-all flex-col justify-center items-center h-screen z-[1000]`}
         >
-            <div className="flex text-white text-4xl font-bold">
-                {displayText}
+            <div className="flex flex-col items-center justify-center relative">
+                <div className="scale-150">
+                    <Loader />
+                </div>
+                <div className="flex absolute text-gray-600 text-3xl font-bold">
+                    {displayText}
+                </div>
             </div>
         </div>
     )

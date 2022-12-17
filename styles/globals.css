@@ -4,23 +4,44 @@
 
 html,
 body {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 h1 {
-  font-size: 80px;
+    font-size: 80px;
 }
 h2 {
-  font-size: 64px;
+    font-size: 64px;
 }
 h3 {
-  font-size: 48px;
+    font-size: 48px;
 }
 h4 {
-  font-size: 32px;
+    font-size: 32px;
 }
 h5 {
-  font-size: 24px;
+    font-size: 24px;
+}
+
+#loader-circle-blue {
+    animation: rotate infinite linear 3s;
+    transform: rotateZ(120deg);
+    transform-origin: center;
+}
+
+#loader-circle-red {
+    animation: rotate infinite linear reverse 4s;
+    transform: rotateZ(120deg);
+    transform-origin: center;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
 }
