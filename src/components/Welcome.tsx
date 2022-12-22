@@ -55,13 +55,13 @@ const Welcome = () => {
         <div
             className={`fixed ${
                 visible ? "opacity-100" : "opacity-0 pointer-events-none"
-            } bg-teal-100 top-0 left-0 w-screen flex transition-all flex-col justify-center items-center h-screen z-[1000]`}
+            } bg-[#e5e7eb] top-0 left-0 w-screen flex transition-all flex-col justify-center items-center h-screen z-[1000]`}
         >
             <div className="flex flex-col items-center justify-center relative">
                 <div className="scale-150">
                     <Loader />
                 </div>
-                <div className="flex absolute text-gray-600 text-3xl font-bold">
+                <div className="flex absolute text-[#E94643] text-3xl font-bold">
                     {displayText}
                 </div>
             </div>
